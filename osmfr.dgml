@@ -24,6 +24,7 @@
 				<texture name="mapnik_data" expire="604800">
 					<sourcedir format="PNG">earth/osmfr</sourcedir>
                     <storageLayout levelZeroColumns="1" levelZeroRows="1" mode="OpenStreetMap" />
+                    <tileSize width="256" height="256" />
                     <projection name="Mercator" />
                     <downloadUrl protocol="http" host="a.tile.openstreetmap.fr" path="/osmfr/" />
                     <downloadUrl protocol="http" host="b.tile.openstreetmap.fr" path="/osmfr/" />
