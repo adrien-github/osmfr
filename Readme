@@ -1,0 +1,21 @@
+
+Integration of osmfr into marble
+=================================
+
+:Author: Adrien Grellier <perso@adrieng.fr>
+:Date: 2013-05-05
+:License: BSD
+
+
+To browse the maps osmfr_ into marble, just do :
+
+..
+  cd .local/share/marble/maps/earth
+  hg clone http://adrieng.fr/cgi-bin/hgweb.cgi/osmfr
+
+
+Any improvement is welcome :)
+
+.. __osmfr: http://tile.openstreetmap.fr/
+
+.. vim:set filetype=rst:
