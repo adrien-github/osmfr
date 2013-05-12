@@ -28,7 +28,7 @@
                     <projection name="Mercator" />
                     <downloadUrl protocol="http" host="a.tile.openstreetmap.fr" path="/osmfr/" />
                     <downloadUrl protocol="http" host="b.tile.openstreetmap.fr" path="/osmfr/" />
-					<downloadUrl protocol="http" host="c.tile.openmap.fr" path="/osmfr/" />
+                    <downloadUrl protocol="http" host="c.tile.openstreetmap.fr" path="/osmfr/" />
 				</texture>
                 <texture name="hillshading" expire="31536000" >
                     <sourcedir format="PNG"> earth/hillshading </sourcedir>
