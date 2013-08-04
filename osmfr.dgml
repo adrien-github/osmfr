@@ -39,7 +39,7 @@
                     <blending name="AlphaBlending" />
                 </texture>
                 <texture name="seamarks" expire="604800" >
-                    <sourcedir format="PNG"> earth/openseamap/seamarks </sourcedir>
+                    <sourcedir format="PNG"> earth/osmfr/seamarks </sourcedir>
                     <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="18" mode="OpenStreetMap" />
                     <projection name="Mercator" />
                     <downloadUrl protocol="http" host="tiles.openseamap.org" path="/seamark/" />
