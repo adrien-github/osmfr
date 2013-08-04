@@ -38,6 +38,15 @@
                     <downloadUrl protocol="http" host="toolserver.org" path="/~cmarqu/hill/" />
                     <blending name="AlphaBlending" />
                 </texture>
+                <texture name="seamarks" expire="604800" >
+                    <sourcedir format="PNG"> earth/openseamap/seamarks </sourcedir>
+                    <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="18" mode="OpenStreetMap" />
+                    <projection name="Mercator" />
+                    <downloadUrl protocol="http" host="tiles.openseamap.org" path="/seamark/" />
+                    <downloadPolicy usage="Browse" maximumConnections="20" />
+                    <downloadPolicy usage="Bulk" maximumConnections="2" />
+                    <blending name="AlphaBlending" />
+		</texture> 
 			</layer>
             <layer name="standardplaces" backend="geodata">
                 <geodata name="cityplacemarks">
@@ -89,6 +98,10 @@
             </group>
             <group name="Texture Layers">
                 <property name="hillshading">
+                    <value>true</value>
+                    <available>false</available>
+                </property>
+                <property name="seamarks">
                     <value>false</value>
                     <available>true</available>
                 </property>
@@ -288,6 +301,65 @@
                 <item name="summit_peak">
                     <icon pixmap="maps/earth/openstreetmap/legend/summitpeak.png"/>
                     <text>Summit, peak</text>
+                </item>
+            </section>
+            <section name="seamarks" checkable="true" connect="seamarks" spacing="12">
+                <heading>Seamarks</heading>
+                <item name="lateral_green">
+                    <icon pixmap="maps/earth/osmfr/legend/lateral_green32.png"/>
+                    <text>Starboard mark (IALA A)</text>
+                </item>
+                <item name="lateral_red">
+                    <icon pixmap="maps/earth/osmfr/legend/lateral_red32.png"/>
+                    <text>Port mark (IALA A)</text>
+                </item>
+                <item name="preferred_starboard">
+                    <icon pixmap="maps/earth/osmfr/legend/preferred_starboard32.png"/>
+                    <text>Preferred channel: Starboard (IALA A)</text>
+                </item>
+                <item name="preferred_port">
+                    <icon pixmap="maps/earth/osmfr/legend/preferred_port32.png"/>
+                    <text>Preferred channel: Port (IALA A)</text>
+                </item>
+                <item name="cardinal_north">
+                    <icon pixmap="maps/earth/osmfr/legend/cardinal_north32.png"/>
+                    <text>Cardinal North</text>
+                </item>
+                <item name="cardinal_east">
+                    <text>Cardinal East</text>
+                    <icon pixmap="maps/earth/osmfr/legend/cardinal_east32.png"/>
+                </item>
+                <item name="cardinal_south">
+                    <icon pixmap="maps/earth/osmfr/legend/cardinal_south32.png"/>
+                    <text>Cardinal South</text>
+                </item>
+                <item name="cardinal_west">
+                    <icon pixmap="maps/earth/osmfr/legend/cardinal_west32.png"/>
+                    <text>Cardinal West</text>
+                </item>
+                <item name="safe_water">
+                    <icon pixmap="maps/earth/osmfr/legend/safe_water32.png"/>
+                    <text>Safe water</text>
+                </item>
+                <item name="isolated_danger">
+                    <icon pixmap="maps/earth/osmfr/legend/isolated_danger32.png"/>
+                    <text>Isolated danger</text>
+                </item>
+                <item name="special_purpose">
+                    <text>Special purpose</text>
+                    <icon pixmap="maps/earth/osmfr/legend/special_purpose22.png"/>
+                </item>
+                <item name="lighthouse">
+                    <icon pixmap="maps/earth/osmfr/legend/lighthouse22.png"/>
+                    <text>Lighthouse or light</text>
+                </item>
+<!--                <item name="light">
+                    <text>Light</text>
+                    <icon pixmap="maps/earth/osmfr/legend/light_major22.png"/>
+                </item>-->
+                <item name="light_minor">
+                    <text>Light (smaller)</text>
+                    <icon pixmap="maps/earth/osmfr/legend/light_minor22.png"/>
                 </item>
             </section>
         </legend>
