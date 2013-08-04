@@ -99,7 +99,7 @@
             <group name="Texture Layers">
                 <property name="hillshading">
                     <value>true</value>
-                    <available>false</available>
+                    <available>true</available>
                 </property>
                 <property name="seamarks">
                     <value>false</value>
