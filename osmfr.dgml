@@ -26,9 +26,9 @@
                     <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="19" mode="OpenStreetMap" />
                     <tileSize width="256" height="256" />
                     <projection name="Mercator" />
-                    <downloadUrl protocol="https" host="a.tile.openstreetmap.fr" path="/osmfr/" />
-                    <downloadUrl protocol="https" host="b.tile.openstreetmap.fr" path="/osmfr/" />
-                    <downloadUrl protocol="https" host="c.tile.openstreetmap.fr" path="/osmfr/" />
+                    <downloadUrl protocol="http" host="a.tile.openstreetmap.fr" path="/osmfr/" />
+                    <downloadUrl protocol="http" host="b.tile.openstreetmap.fr" path="/osmfr/" />
+                    <downloadUrl protocol="http" host="c.tile.openstreetmap.fr" path="/osmfr/" />
 				</texture>
                 <texture name="hillshading" expire="31536000" >
                     <sourcedir format="PNG"> earth/hillshading </sourcedir>
