@@ -38,15 +38,6 @@
                     <downloadUrl protocol="https" host="toolserver.org" path="/~cmarqu/hill/" />
                     <blending name="AlphaBlending" />
                 </texture>
-                <texture name="seamarks" expire="604800" >
-                    <sourcedir format="PNG"> earth/osmfr/seamarks </sourcedir>
-                    <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="18" mode="OpenStreetMap" />
-                    <projection name="Mercator" />
-                    <downloadUrl protocol="http" host="tiles.openseamap.org" path="/seamark/" />
-                    <downloadPolicy usage="Browse" maximumConnections="20" />
-                    <downloadPolicy usage="Bulk" maximumConnections="2" />
-                    <blending name="AlphaBlending" />
-				</texture> 
 			</layer>
             <layer name="standardplaces" backend="geodata">
                 <geodata name="cityplacemarks">
@@ -99,10 +90,6 @@
             <group name="Texture Layers">
                 <property name="hillshading">
                     <value>true</value>
-                    <available>true</available>
-                </property>
-                <property name="seamarks">
-                    <value>false</value>
                     <available>true</available>
                 </property>
             </group>
