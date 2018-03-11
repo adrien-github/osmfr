@@ -28,6 +28,7 @@ Privacy
 This software contacts the following servers:
 
 - **\*.tile.openstreetmap.fr** for the map tiles
+- **proxy-ign.openstreetmap.fr** for the BD Ortho IGN tiles
 - **\*.tiles.wmflabs.org** for the hillshading
 - **tile.waymarkedtrails.org** for the Hiking and Cycling overlay
 

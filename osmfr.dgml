@@ -30,6 +30,14 @@
                     <downloadUrl protocol="http" host="b.tile.openstreetmap.fr" path="/osmfr/" />
                     <downloadUrl protocol="http" host="c.tile.openstreetmap.fr" path="/osmfr/" />
 				</texture>
+                <texture name="ign" expire="31536000">
+					<sourcedir format="jpeg" expire="31536000">earth/osmfr/ign</sourcedir>
+                    <storageLayout maximumTileLevel="20" levelZeroColumns="1" levelZeroRows="1" mode="Custom"/>
+                    <downloadUrl protocol="https" host="proxy-ign.openstreetmap.fr" path="/94GjiyqD/bdortho/{zoomLevel}/{x}/{y}.jpg" query=""/>
+                    <downloadPolicy usage="Browse" maximumConnections="20"/>
+                    <downloadPolicy usage="Bulk" maximumConnections="2"/>
+                    <projection name="Mercator"/>
+                </texture>
 				<texture name="hillshading" expire="31536000">
 					<sourcedir format="PNG"> earth/hillshading </sourcedir>
 					<tileSize width="256" height="256"/>
@@ -104,6 +112,10 @@
                 </property>
             </group>
             <group name="Texture Layers">
+                <property name="ign">
+                    <value>false</value>
+                    <available>true</available>
+                </property>
                 <property name="hillshading">
                     <value>true</value>
                     <available>true</available>
@@ -121,6 +133,9 @@
         <legend>
       <section name="coordinate-grid" checkable="true" connect="coordinate-grid" spacing="12">
         <heading>Coordinate Grid</heading>
+      </section>
+      <section name="ign" checkable="true" connect="ign" spacing="12">
+        <heading>Bd Ortho IGN</heading>
       </section>
       <section name="hillshading" checkable="true" connect="hillshading" spacing="12">
         <heading>Hillshading</heading>
