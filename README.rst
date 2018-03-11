@@ -29,5 +29,6 @@ This software contacts the following servers:
 
 - **\*.tile.openstreetmap.fr** for the map tiles
 - **\*.tiles.wmflabs.org** for the hillshading
+- **tile.waymarkedtrails.org** for the Hiking and Cycling overlay
 
 .. vim:set filetype=rst:

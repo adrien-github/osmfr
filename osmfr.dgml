@@ -40,6 +40,20 @@
 					<downloadUrl protocol="http" host="c.tiles.wmflabs.org" path="/hillshading/"/>
 					<blending name="AlphaBlending"/>
 				</texture>
+                <texture name="hiking" expire="31536000">
+					<sourcedir format="png" expire="31536000">earth/osmfr/hiking</sourcedir>
+                    <storageLayout maximumTileLevel="18" levelZeroColumns="1" levelZeroRows="1" mode="Custom"/>
+                    <projection name="Mercator"/>
+					<downloadUrl protocol="https" host="tile.waymarkedtrails.org" path="/hiking/{zoomLevel}/{x}/{y}.png" />
+					<blending name="AlphaBlending"/>
+                </texture>
+                <texture name="cycling" expire="31536000">
+					<sourcedir format="png" expire="31536000">earth/osmfr/cycling</sourcedir>
+                    <storageLayout maximumTileLevel="18" levelZeroColumns="1" levelZeroRows="1" mode="Custom"/>
+                    <projection name="Mercator"/>
+					<downloadUrl protocol="https" host="tile.waymarkedtrails.org" path="/cycling/{zoomLevel}/{x}/{y}.png" />
+					<blending name="AlphaBlending"/>
+                </texture>
 			</layer>
             <layer name="standardplaces" backend="geodata">
                 <geodata name="cityplacemarks">
@@ -94,6 +108,14 @@
                     <value>true</value>
                     <available>true</available>
                 </property>
+                <property name="hiking">
+                    <value>false</value>
+                    <available>true</available>
+                </property>
+                <property name="cycling">
+                    <value>false</value>
+                    <available>true</available>
+                </property>
             </group>
         </settings>
         <legend>
@@ -102,6 +124,12 @@
       </section>
       <section name="hillshading" checkable="true" connect="hillshading" spacing="12">
         <heading>Hillshading</heading>
+      </section>
+      <section name="hiking" checkable="true" connect="hiking" spacing="12">
+        <heading>Hiking</heading>
+      </section>
+      <section name="cycling" checkable="true" connect="cycling" spacing="12">
+        <heading>Cycling</heading>
       </section>
       <section name="traffic" checkable="false" spacing="12">
         <heading>Transportation</heading>
