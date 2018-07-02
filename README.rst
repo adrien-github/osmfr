@@ -31,5 +31,6 @@ This software contacts the following servers:
 - **proxy-ign.openstreetmap.fr** for the BD Ortho IGN tiles
 - **\*.tiles.wmflabs.org** for the hillshading
 - **tile.waymarkedtrails.org** for the Hiking and Cycling overlay
+- **tiles.openseamap.org** for the Seamarks overlay
 
 .. vim:set filetype=rst:
