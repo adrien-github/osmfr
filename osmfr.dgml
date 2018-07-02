@@ -12,7 +12,7 @@
 			]]></description>
             <icon pixmap="osmfr-preview.png"/>
             <zoom>
-                <discrete>false</discrete>
+                <discrete>true</discrete>
                 <minimum>900</minimum>
                 <maximum>3500</maximum>
             </zoom>
@@ -62,6 +62,15 @@
 					<downloadUrl protocol="https" host="tile.waymarkedtrails.org" path="/cycling/{zoomLevel}/{x}/{y}.png" />
 					<blending name="AlphaBlending"/>
                 </texture>
+                <texture name="seamarks" expire="604800" >
+                    <sourcedir format="PNG"> earth/osmfr/seamarks </sourcedir>
+                    <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="18" mode="OpenStreetMap" />
+                    <projection name="Mercator" />
+                    <downloadUrl protocol="http" host="tiles.openseamap.org" path="/seamark/" />
+                    <downloadPolicy usage="Browse" maximumConnections="20" />
+                    <downloadPolicy usage="Bulk" maximumConnections="2" />
+                    <blending name="AlphaBlending" />
+				</texture> 
 			</layer>
             <layer name="standardplaces" backend="geodata">
                 <geodata name="cityplacemarks">
@@ -128,6 +137,10 @@
                     <value>false</value>
                     <available>true</available>
                 </property>
+                <property name="seamarks">
+                    <value>false</value>
+                    <available>true</available>
+                </property>
             </group>
         </settings>
         <legend>
@@ -145,6 +158,9 @@
       </section>
       <section name="cycling" checkable="true" connect="cycling" spacing="12">
         <heading>Cycling</heading>
+      </section>
+      <section name="seamarks" checkable="true" connect="seamarks" spacing="12">
+        <heading>Seamarks</heading>
       </section>
       <section name="traffic" checkable="false" spacing="12">
         <heading>Transportation</heading>
