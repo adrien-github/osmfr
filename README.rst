@@ -27,10 +27,11 @@ Privacy
 
 This software contacts the following servers:
 
-- **\*.tile.openstreetmap.fr** for the map tiles
+- **\*.tile.openstreetmap.fr** for the map tiles (connexion not secured, HTTP)
 - **proxy-ign.openstreetmap.fr** for the BD Ortho IGN tiles
-- **\*.tiles.wmflabs.org** for the hillshading
+- **\*.tiles.wmflabs.org** for the hillshading (connexion not secured, HTTP)
 - **tile.waymarkedtrails.org** for the Hiking and Cycling overlay
-- **tiles.openseamap.org** for the Seamarks overlay
+- **tiles.openseamap.org** for the Seamarks overlay (connexion not secured, HTTP)
+- **openptmap.org** for the Public Transport Overlay (connexion not secured, HTTP)
 
 .. vim:set filetype=rst:
