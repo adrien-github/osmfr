@@ -39,8 +39,12 @@ Screenshots
 
 Here is some screenshots of the app :
 
-![Hiking path in the PNR la Vanoise, Alpes](screenshots/Screenshot_Vanoise.png "Hiking path in la Vanoise, Alpes)
+Hiking path in la Vanoise, Alpes :
 
-![Belle-île Harbour](master/screenshots/Screenshot_Belle-ile.png "Belle-île Harbour, with seamarks, Hiking and Cycling path)
+![Hiking path in the PNR la Vanoise, Alpes](screenshots/Screenshot_Vanoise.png)
+
+Belle-île Harbour, with seamarks, Hiking and Cycling path:
+
+![Belle-île Harbour](master/screenshots/Screenshot_Belle-ile.png)
 
 .. vim:set filetype=rst:
