@@ -71,6 +71,13 @@
                     <downloadPolicy usage="Bulk" maximumConnections="2" />
                     <blending name="AlphaBlending" />
 				</texture> 
+                <texture name="transport" expire="604800" >
+                    <sourcedir format="PNG"> earth/osmfr/openptmap </sourcedir>
+                    <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="20" mode="Custom" />
+                    <projection name="Mercator" />
+					<downloadUrl protocol="http" host="openptmap.org" path="/tiles/{zoomLevel}/{x}/{y}.png" />
+                    <blending name="AlphaBlending" />
+				</texture> 
 			</layer>
             <layer name="standardplaces" backend="geodata">
                 <geodata name="cityplacemarks">
@@ -141,6 +148,10 @@
                     <value>false</value>
                     <available>true</available>
                 </property>
+                <property name="transport">
+                    <value>false</value>
+                    <available>true</available>
+                </property>
             </group>
         </settings>
         <legend>
@@ -161,6 +172,9 @@
       </section>
       <section name="seamarks" checkable="true" connect="seamarks" spacing="12">
         <heading>Marques Nautiques</heading>
+      </section>
+      <section name="transport" checkable="true" connect="transport" spacing="12">
+        <heading>Transport en Commun</heading>
       </section>
       <section name="traffic" checkable="false" spacing="12">
         <heading>Transportation</heading>
