@@ -159,16 +159,16 @@
         <heading>Coordinate Grid</heading>
       </section>
       <section name="ign" checkable="true" connect="ign" spacing="12">
-        <heading>Bd Ortho IGN</heading>
+        <heading>Vue Satellite (Bd Ortho IGN)</heading>
       </section>
       <section name="hillshading" checkable="true" connect="hillshading" spacing="12">
-        <heading>Hillshading</heading>
+        <heading>Ombrage du relief</heading>
       </section>
       <section name="hiking" checkable="true" connect="hiking" spacing="12">
-        <heading>Hiking</heading>
+        <heading>Circuits de randonnée</heading>
       </section>
       <section name="cycling" checkable="true" connect="cycling" spacing="12">
-        <heading>Cycling</heading>
+        <heading>Circuits cyclables</heading>
       </section>
       <section name="seamarks" checkable="true" connect="seamarks" spacing="12">
         <heading>Marques Nautiques</heading>
