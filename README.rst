@@ -34,4 +34,13 @@ This software contacts the following servers:
 - **tiles.openseamap.org** for the Seamarks overlay (connexion not secured, HTTP)
 - **openptmap.org** for the Public Transport Overlay (connexion not secured, HTTP)
 
+Screenshots
+------------
+
+Here is some screenshots of the app :
+
+![Hiking path in the PNR la Vanoise, Alpes](screenshots/Screenshot_Vanoise.png "Hiking path in la Vanoise, Alpes)
+
+![Belle-île Harbour](master/screenshots/Screenshot_Belle-ile.png "Belle-île Harbour, with seamarks, Hiking and Cycling path)
+
 .. vim:set filetype=rst:
