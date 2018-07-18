@@ -64,7 +64,7 @@
                 </texture>
                 <texture name="seamarks" expire="604800" >
                     <sourcedir format="PNG"> earth/osmfr/seamarks </sourcedir>
-                    <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="18" mode="OpenStreetMap" />
+                    <storageLayout levelZeroColumns="1" levelZeroRows="1" maximumTileLevel="19" mode="OpenStreetMap" />
                     <projection name="Mercator" />
                     <downloadUrl protocol="http" host="tiles.openseamap.org" path="/seamark/" />
                     <downloadPolicy usage="Browse" maximumConnections="20" />
@@ -160,7 +160,7 @@
         <heading>Cycling</heading>
       </section>
       <section name="seamarks" checkable="true" connect="seamarks" spacing="12">
-        <heading>Seamarks</heading>
+        <heading>Marques Nautiques</heading>
       </section>
       <section name="traffic" checkable="false" spacing="12">
         <heading>Transportation</heading>
